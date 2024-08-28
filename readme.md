@@ -1,6 +1,9 @@
 # Tokenized Tuition Payments
 ![Screenshot from 2024-08-28 15-04-18](https://github.com/user-attachments/assets/967f7c92-f114-4c43-8004-8545a1134cfa)
 
+## Presentation
+
+You can view the project presentation [here](https://docs.google.com/presentation/d/19EQD95CD7eD4moRgokjQcZhKBg0cDLQa/edit?usp=sharing&ouid=111013400212800111520&rtpof=true&sd=true).
 
 ## Vision
 The **Tokenized Tuition Payments** project aims to revolutionize the way educational institutions manage tuition payments. By leveraging blockchain technology and ERC20 tokens, this system allows students to pay their tuition in a decentralized, transparent, and secure manner. The goal is to provide a seamless payment experience that ensures accountability and automation of the entire tuition payment process.
