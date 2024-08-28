@@ -1,0 +1,16 @@
+[
+    {
+      "constant": false,
+      "inputs": [
+        { "name": "student", "type": "address" },
+        { "name": "totalAmount", "type": "uint256" },
+        { "name": "numberOfInstallments", "type": "uint256" }
+      ],
+      "name": "createTuitionPlan",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+  

@@ -1,0 +1,144 @@
+/* src/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 105, 97, 0.6);
+}
+
+button:hover {
+  background-color: #ff3b30;
+  box-shadow: 0 6px 12px rgba(255, 105, 97, 0.8);
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 105, 97, 0.6);
+}
+
+.wallet {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.wallet button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wallet button:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.6);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+
+.section p {
+  margin: 10px 0;
+}
+
+.section input, .section textarea {
+  max-width: 300px;
+  display: inline-block;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientBackground {
+  0% {
+    background-color: #ff6f61;
+    background-image: linear-gradient(45deg, #ff6f61, #ff9a8b);
+  }
+  50% {
+    background-color: #6a11cb;
+    background-image: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+  100% {
+    background-color: #ff6f61;
+    background-image: linear-gradient(45deg, #ff6f61, #ff9a8b);
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  z-index: -1;
+}

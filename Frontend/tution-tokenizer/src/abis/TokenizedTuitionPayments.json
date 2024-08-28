@@ -1,0 +1,44 @@
+[
+    {
+      "constant": false,
+      "inputs": [
+        { "name": "student", "type": "address" },
+        { "name": "totalAmount", "type": "uint256" },
+        { "name": "numberOfInstallments", "type": "uint256" }
+      ],
+      "name": "createTuitionPlan",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        { "name": "student", "type": "address" }
+      ],
+      "name": "getTuitionPlan",
+      "outputs": [
+        { "name": "totalAmount", "type": "uint256" },
+        { "name": "installmentAmount", "type": "uint256" },
+        { "name": "numberOfInstallments", "type": "uint256" },
+        { "name": "paidInstallments", "type": "uint256" },
+        { "name": "nextPaymentDate", "type": "uint256" },
+        { "name": "isActive", "type": "bool" }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": false, "name": "student", "type": "address" },
+        { "indexed": false, "name": "totalAmount", "type": "uint256" },
+        { "indexed": false, "name": "numberOfInstallments", "type": "uint256" }
+      ],
+      "name": "TuitionPlanCreated",
+      "type": "event"
+    }
+  ]
+  
